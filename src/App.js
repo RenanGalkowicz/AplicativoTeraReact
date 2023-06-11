@@ -1,14 +1,25 @@
-//import Home from "./components/pages/Home";
-//import Users from "./components/pages/Users";
-//import UserBlog from "./components/pages/UserBlog.jsx";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+
+import Home from "./components/pages/Home";
+import Users from "./components/pages/Users";
+import UserBlog from "./components/pages/UserBlog.jsx";
 import UserPostForm from "./components/pages/UserPostForm";
+
 
 import "./styles/normalize.css"
 import "./styles/fontawesome.min.css"
 import "./styles/main.css"
 
 function App() {
-  return <UserPostForm/>;
+  return (
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/users" element={<Users />} />
+      <Route path="/users/:userid" element={<UserBlog />} />
+      <Route path="/users/:userid/post" element={<UserPostForm />} />
+    </Routes>  
+  </BrowserRouter>);
 }
 
 export default App;
