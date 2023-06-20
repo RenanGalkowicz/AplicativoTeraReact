@@ -215,3 +215,30 @@ label {
 .create-post__form textarea {
   height: 200px;
 }
+
+/*******************************************/
+
+.login>* {
+  margin-bottom: 20px;
+}
+
+.login__logo {
+  max-width: 250px;
+}
+
+.login__form {
+  width: 100%;
+  max-width: 250px;
+}
+
+.login__form input {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+/*******************************************/
+
+.MuiDrawer-paper {
+  padding: 20px 40px;
+}

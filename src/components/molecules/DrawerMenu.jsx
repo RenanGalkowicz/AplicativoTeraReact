@@ -17,13 +17,16 @@ export default function DrawerMenu(props) {
     >
       <List>
         <ListItem>
-          <Link to="/">Home</Link>
+          <Link to="/home">Home</Link>
         </ListItem>
         <ListItem>
           <Link to="/users">Usuários</Link>
         </ListItem>
         <ListItem>
           <Link to={`/users/${currentUser}/post`}>Criar Post</Link>
+        </ListItem>
+        <ListItem>
+          <Link to="/logout">Sair</Link>
         </ListItem>
       </List>
     </Drawer>
